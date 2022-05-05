@@ -36,5 +36,5 @@ jobs:
 
       - name: Sign policy
         run: |
-          echo "$COSIGN_KEY" >> cosign.key
+          echo "$COSIGN_KEY" > cosign.key
           echo /tmp/cosign sign -key cosign.key opcr.io/$POLICY_REPO:1.0.0
